@@ -1,12 +1,12 @@
 name: Hello world
 on:
   schedule:
-    - cron: '0 22 * * *'
+    - cron: '*/5 * * * *'
 jobs:
   hello-world-job:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - name: Run a one-line script
         run: echo "hello world"
   A:
