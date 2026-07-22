@@ -5,13 +5,13 @@ on:
   workflow_dispatch:
 
 env:
-  TZ: Europe/Lisbon
+  ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION: true
 
 jobs:
   hello-world-job:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v5
       - name: Run a one-line script
         run: echo "hello world"
   A:
