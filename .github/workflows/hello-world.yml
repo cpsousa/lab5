@@ -3,8 +3,10 @@ on:
   schedule:
     - cron: '*/5 * * * *'
   workflow_dispatch:
+
 env:
   TZ: Europe/Lisbon
+
 jobs:
   hello-world-job:
     runs-on: ubuntu-latest
